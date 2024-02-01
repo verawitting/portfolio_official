@@ -1,0 +1,46 @@
+.button {
+    display: inline-block;
+  }
+  
+  .button a {
+    display: inline-block;
+    background-color: #dbe2c7;
+    color: #333;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    padding-right: 11px;
+    text-decoration: none;
+    border-radius: 25px;
+    width: 100%; 
+  }
+  
+  .button img {
+    height: 40px;
+    width: 40px
+  }
+  
+  .button-content-wrapper {
+    display: flex;
+    align-items: center;
+  
+  }
+
+  .btn-wrapper-projects {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .button a:hover {
+    background-color: var(--hover);
+  }
+
+  @media (min-width:450px) {
+    .btn-wrapper-projects {
+      flex-direction: row;
+    }
+    .button {
+      width: 100%;
+    }
+  }

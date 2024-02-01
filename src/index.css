@@ -1,0 +1,86 @@
+:root {
+  margin: 0px 16px; 
+  font-family: "Hind", sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --black: #0e0e0e;
+  --white: #c5d1d5;
+  --deepGreen: #455a00;
+  --plum: #222245;
+  --hover: #a9bb6c; 
+  background-color: var(--white);
+}
+
+*{
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+
+/*MOVE TO APP.CSS*/
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.dark-h2 {
+  color: var(--plum);
+}
+
+.light-h2 {
+  color: var(--white);
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.bodytext {
+  margin-bottom: 16px;
+}
+
+/*PROFILBILD LÅT STÅ*/
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.image-cropper {
+  display: inline-block;
+  position: relative;
+  width: 164px;
+  height: 164px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.image-cropper > img {
+  width: 100%;
+  height: auto;
+  margin-top: -15px;
+}
+
+/*LETS TALK*/
+.letstalk-section {
+  margin: 128px 0 ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px; 
+}
+
+.info-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--black);
+}
+
+

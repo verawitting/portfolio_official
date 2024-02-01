@@ -1,0 +1,28 @@
+
+.footer {
+    margin: 0 -16px;
+    padding: 40px 0px;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--deepGreen);
+  }
+  
+  .moving-text {
+    white-space: nowrap;
+    animation: moveLeftToRight 10s linear infinite;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--white);
+  }
+  
+  @keyframes moveLeftToRight {
+    0% {
+      transform: translateX(100%);
+      /* Start from the right of the container. */
+    }
+    100% {
+      transform: translateX(-100%);
+      /* Move to the left of the container. */
+    }
+  }

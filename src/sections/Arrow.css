@@ -1,0 +1,21 @@
+.arrow {
+    height: 30px;
+    width: auto;
+}
+
+.arrow {
+    margin: 20px 0 0 ; 
+    display: flex;
+    justify-content: center;
+    animation: moveUpDown 1s linear infinite;
+}
+
+@keyframes moveUpDown {
+
+    0%, 100% {
+      transform: translateY(0);
+    }
+    25%, 75% {
+      transform: translateY(-10px);
+    }
+}

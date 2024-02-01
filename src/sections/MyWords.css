@@ -1,0 +1,83 @@
+.mywords-section {
+    margin: 0 -16px;
+    background-color: #ffffff;
+    z-index: 2; 
+    position: relative; 
+}
+
+.mywords-section-content {
+    display: flex;
+    justify-content: center;
+}
+  
+.mywords-wrapper {
+    margin: 0 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 128px 16px;
+}
+
+
+/*WAVYLINE (AVEN I MYWORDS-SECTION)*/
+.wavy-line-wrapper {
+    z-index: 2;
+    position: relative;
+    top: -13px;
+    overflow: hidden;
+}
+  
+.mywords-h2 {
+    color: var(--deepGreen);
+    text-align: center;
+}
+  
+.single-article {
+    padding: 64px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+  
+.article-img {
+    border-bottom: solid 10px var(--deepGreen) ;
+    border-left: solid 10px var(--deepGreen) ;
+    height: 200px;
+    width: 100%;
+    object-fit: cover; 
+    margin-bottom: 10px;
+}
+  
+.article-date {
+    width: fit-content;
+    padding: 2px 6px;
+    color: #FFF;
+    background-color: black;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/*Sorry that I have the tablet version on 600px, 
+The image just does not look good when it's streched */
+@media (min-width: 600px) {
+    .mywords-h2 {
+        display: block;
+        text-align: left;
+    }
+
+    .article-img {
+        height: 400px;
+    }
+}
+
+@media (min-width: 800px) {
+    
+    .article-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 98px;
+    }
+
+}

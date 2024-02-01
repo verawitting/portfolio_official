@@ -1,0 +1,21 @@
+.social-media-wrapper {
+    display: flex;
+    gap: 32px; 
+}
+
+.social-media-wrapper a img {
+    height: 40px;
+    width: 40px;
+}
+
+.linkedin-icon:hover {
+    content: url("/src/assets/social/linkedin.svg");
+}
+
+.github-icon:hover {
+    content: url("/src/assets/social/github.svg");
+}
+
+.instagram-icon:hover {
+    content: url("/src/assets/social/instagram.svg")
+}

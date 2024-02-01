@@ -1,0 +1,33 @@
+[
+    {
+        "repoName": "project-happy-thoughts-vite",
+        "prettyName": "Project Happy Thoughts",
+        "imageUrl": "/chat-bot-mockup.jpg"
+
+    },
+    {
+        "repoName": "project-guess-who",
+        "prettyName": "Guess Who",
+        "imageUrl": "/guess-who-mockup.jpg"
+    },
+    {
+        "repoName": "project-chatbot",
+        "prettyName": "Trivia Bot",
+        "imageUrl": "/chat-bot-mockup.jpg"
+    },
+    {
+        "repoName": "project-survey-vite",
+        "prettyName": "Your Dream Vacay!",
+        "imageUrl": "./dream-vacay-mockup.jpg"   
+    },
+    {
+        "repoName": "project-music-releases-vite",
+        "prettyName": "Music Releases",
+        "imageUrl": "/music-releases-mockup.jpg"
+    },
+    {
+        "repoName": "project-weather-app",
+        "prettyName": "The Weather App",
+        "imageUrl": "/weather-app-mockup.jpg"
+    }
+]
