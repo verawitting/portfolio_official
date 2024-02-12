@@ -1,6 +1,6 @@
 export const BodyBold = ({ text, className }) => {
     
     return (
-        <p className={`${className}`}>{text}</p>
+        <p className="body-bold">{text}</p>
     )
 }

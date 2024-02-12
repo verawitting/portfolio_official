@@ -3,6 +3,7 @@ import { SubHeading } from "./components/Typo/SubHeading.jsx"
 import { SocialMedia } from "./components/SocialMedia.jsx"
 
 import profile  from "../assets/extraaa/profile-pic.jpg"
+import { BodyBold } from "./components/Typo/BodyBold.jsx"
 
 export const LetsTalk = () => {
 
@@ -19,9 +20,9 @@ export const LetsTalk = () => {
                 </div>
             </div>
             <div className="info-wrapper">
-                <SubHeading text={contactInfoName}/>
-                <SubHeading text={contactInfoPhone}/>
-                <SubHeading text={contactInfoMail}/>
+            <MainHeading className={`dark-h2-introduction`} text={`Vera Witting`}/>
+                <BodyBold text={contactInfoPhone}/>
+                <BodyBold text={contactInfoMail}/>
             </div>
             <SocialMedia />
         </section>

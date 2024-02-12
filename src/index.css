@@ -1,30 +1,41 @@
 :root {
-  margin: 0px 16px; 
-  font-family: "Hind", sans-serif;
-  font-size: 18px;
+  margin: 0px 1rem; 
+  font-size: 1.2rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --black: #0e0e0e;
-  --white: #c5d1d5;
+  --light: #c5d1d5;
+  --white: #fff;
+  --whiteTransparent: rgb(197, 209, 213, 0.5);
   --deepGreen: #455a00;
   --plum: #222245;
   --hover: #a9bb6c; 
-  background-color: var(--white);
+  --blue: #336897; 
+  background-color: var(--light);
 }
 
 *{
-  margin: 0px;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
+  font-family: Helvetica, sans-serif;
+  font-weight: 100;
 }
 
 
 /*MOVE TO APP.CSS*/
+h1 { 
+  font-weight: 100;
+  font-size:larger;
+}
+
 h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 56px;
+  font-size: 3rem;
+  line-height: 0.9;
+  font-family: "dunbar-tall", sans-serif;
   font-weight: 700;
+  font-style: italic;
+  margin-bottom: 1rem;
 }
 
 .dark-h2 {
@@ -36,29 +47,38 @@ h2 {
 }
 
 h3 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 16px;
+  font-size: 1.5rem;
+  line-height: 0.9;
+  font-family: "dunbar-tall", sans-serif;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
 }
 
 .bodytext {
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
-/*PROFILBILD LÅT STÅ*/
+.intro-body {
+  text-align: end;
+}
+
+.body-bold {
+  font-family: "dunbar-tall", sans-serif;
+  font-size: 1.2rem;
+}
+
+/*PROFILBILD*/
 .image-wrapper {
   display: flex;
-  justify-content: center;
 }
 
 .image-cropper {
   display: inline-block;
   position: relative;
-  width: 164px;
-  height: 164px;
+  width: 13rem;
+  height: 13rem;
   overflow: hidden;
-  border-radius: 50%;
+  border-radius: 0.5rem;
 }
 
 .image-cropper > img {
@@ -69,18 +89,26 @@ h3 {
 
 /*LETS TALK*/
 .letstalk-section {
-  margin: 128px 0 ;
+  padding: 5rem 0 4rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 64px; 
+  align-items: end;
+  gap: 4rem; 
 }
 
 .info-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: end;
   color: var(--black);
 }
 
+@media (min-width: 800px) {
+  .letstalk-section {
+    align-items: center;
+  }
+  .info-wrapper {
+    align-items: center;
+  }
+}
 

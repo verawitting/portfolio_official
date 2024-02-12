@@ -29,5 +29,10 @@
         "repoName": "project-weather-app",
         "prettyName": "The Weather App",
         "imageUrl": "/weather-app-mockup.jpg"
+    },
+    {
+        "repoName": "final-project-plants-by",
+        "prettyName": "Plants by Holm & Witting",
+        "imageUrl": "/plants-by-mockup.png"
     }
 ]
