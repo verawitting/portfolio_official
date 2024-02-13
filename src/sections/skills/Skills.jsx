@@ -13,7 +13,7 @@ export const Skills = () => {
     const MoreList = ["Branding", "Typography", "Graphic Design", "Agile Methodology"]
 
     return(
-        <section className="skills-section">
+        <section className="skills-section" id="skills">
             <div className="skills-wrapper">
                 <MainHeading className={`light-h2`} text={`Skills`}/>
                 <div className="all-lists-wrapper">

@@ -12,7 +12,7 @@ export const LetsTalk = () => {
     const contactInfoMail = "verawitting@gmail.com"
 
     return (
-        <section className="letstalk-section">
+        <section className="letstalk-section" id="contact">
             <MainHeading className={`dark-h2`} text={`Let's Talk!`}/>
             <div className="image-wrapper">
                 <div className="image-cropper">

@@ -32,7 +32,7 @@ export const FeaturedProjects = () => {
 
 
     return (
-        <section className="featuredprojects-section">
+        <section className="featuredprojects-section" id="projects">
             <div className="featuredprojects-wrapper">
                 <div className="headings-featured-projects">
                     <MainHeading className={`dark-h2`} text={`Featured Projects`}/>
