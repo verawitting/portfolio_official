@@ -25,6 +25,7 @@
 
 .text-wrapper .bodytext {
   text-align: end;
+  margin-bottom: 0;
 }
 
 .arrow {
@@ -40,7 +41,6 @@
 }
 
 @keyframes moveUpDown {
-
   0%, 100% {
     transform: translateY(0);
   }
@@ -66,24 +66,33 @@
   .introduction-wrapper {
     margin: 128px 64px;
     display: grid;
-    grid-template-columns: 9rem 1fr;
-    column-gap: 22px;
-    row-gap: 32px; 
+    grid-template-columns: 1fr 13rem;
+    column-gap: 22px; 
   }
 
-  .headings-introduction {
-    grid-column: 1 / 3;
-    grid-row: 1 / 2;
-
+  .image-cropper {
+    align-self: center ;
+    grid-column: 2;
   }
 
   .dark-h2-introduction {
     font-size: 56px;
   }
- 
-  .bodytext {
+
+  .text-wrapper {
+    justify-self: flex-end;
     align-self: center;
+    max-width: 30rem;
+    grid-row: 1;
   }
+
+  .introduction-section .image-cropper {
+    align-self: start;
+  }
+
+  .image-cropper > img {
+    margin-top: 0px;
+  } 
 }
 
 @media (min-width: 1279px) {
