@@ -66,8 +66,7 @@
   .introduction-wrapper {
     margin: 128px 64px;
     display: grid;
-    grid-template-columns: 164px 1fr;
-    grid-template-rows: 1fr 164px;
+    grid-template-columns: 9rem 1fr;
     column-gap: 22px;
     row-gap: 32px; 
   }

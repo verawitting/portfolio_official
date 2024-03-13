@@ -17,10 +17,8 @@ export const Introduction = () => {
     return (
         <section className="introduction-section">
             <div className="introduction-wrapper">
-                <div className="image-wrapper">
-                    <div className="image-cropper">
-                        <img src={profile} alt="A picture of Vera Witting" />
-                    </div>
+                <div className="image-cropper">
+                    <img src={profile} alt="A picture of Vera Witting" />
                 </div>
                 <div className="text-wrapper">
                     <MainHeading className={`dark-h2-introduction`} text={`Vera Witting`}/>

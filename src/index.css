@@ -68,23 +68,30 @@ h3 {
 }
 
 /*PROFILBILD*/
-.image-wrapper {
-  display: flex;
-}
-
 .image-cropper {
+  border-radius: 0.5rem; 
+  overflow: hidden; 
   display: inline-block;
   position: relative;
-  width: 13rem;
-  height: 13rem;
-  overflow: hidden;
-  border-radius: 0.5rem;
+  width: 12rem;
+  height: 12rem;
 }
 
 .image-cropper > img {
   width: 100%;
   height: auto;
   margin-top: -15px;
+}
+
+@media (min-width: 744px) {
+  .image-cropper {
+    width: 9rem;
+    height: 10rem; 
+  }
+  .image-cropper > img {
+    margin-top: 0px;
+  }
+   
 }
 
 /*LETS TALK*/
