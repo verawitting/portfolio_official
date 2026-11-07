@@ -13,13 +13,15 @@ function App() {
 
   return (
     <>
-      <Header /> 
-      <Introduction />
-      <Tech />
-      <FeaturedProjects />
-      {/* <MyWords /> */}
-      <Skills />
-      <LetsTalk />
+      <Header />
+      <main role="main">
+        <Introduction />
+        <Tech />
+        <FeaturedProjects />
+        {/* <MyWords /> */}
+        <Skills />
+        <LetsTalk />
+      </main>
       <Footer />
     </>
   )
