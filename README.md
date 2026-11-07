@@ -6,7 +6,10 @@
 
 ### Hi! I'm Vera Witting!
 
-Welcome to my first React portfolio project! I am Vera, a student who had completed Sprint 2 of the Technigo boot camp, and now I'm taking my skills to the next level. This portfolio showcases my mastery of React concepts, implementing components, props, hooks and web APIs to create a dynamic and interactive website. 
+Welcome to my first React portfolio project!
+It has had a few updates since I first created it in 2024, the description below is from the first creation of my own portfolio website. Hope you like it!
+
+I am Vera, a student who had completed Sprint 2 of the Technigo boot camp, and now I'm taking my skills to the next level. This portfolio showcases my mastery of React concepts, implementing components, props, hooks and web APIs to create a dynamic and interactive website. 
 
 By breaking down the project into reusable components and efficiently passing data with props, I've ensured a well-structured and organized codebase. Utilizing React hooks, particularly the useState hook, has allowed me to manage reactive data and create an engaging user experience.
 
