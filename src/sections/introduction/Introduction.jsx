@@ -1,36 +1,39 @@
 import { MainHeading } from "../components/Typo/MainHeading.jsx"
+import { SectionHeading } from "../components/Typo/SectionHeading.jsx"
 import { SubHeading } from "../components/Typo/SubHeading.jsx"
 import { BodyText } from "../components/Typo/BodyText.jsx"
+import { FaArrowDown } from "react-icons/fa";
+import { TiStarburstOutline } from "react-icons/ti";
+import { BsEmojiSunglasses } from "react-icons/bs";
 
-import profile from "../../assets/extraaa/profile-pic.jpg"
-import arrow from "../../assets/elements/arrow.svg"
+
 
 import "./Introduction.css"
+import { ProfileImg } from "../components/ProfileImg.jsx"
+import { BodyBold } from "../components/Typo/BodyBold.jsx"
 
 
 export const Introduction = () => {
 
-    const BodyContent = `I love programming and embrace every opportunity to learn more. 
-    With a background in Graphic Design, I create dynamic and visually appealing digital experiences. 
-    I thrive in social environments, learning and being inspired by people around me.`
+    const BodyContent = `Hello world! I'm a software developer with a background in fullstack 
+    development and graphic design. I've worked on projects using Java, Spring Boot, REST APIs, 
+    databases and React, with hands-on experience in testing and CI/CD workflows. 
+    I enjoy solving technical problems, learning how systems fit together and collaborating 
+    with others to build useful software.`
 
     return (
         <section className="introduction-section">
             <div className="introduction-wrapper">
-                <div className="image-cropper">
-                    <img src={profile} alt="A picture of Vera Witting" />
-                </div>
-                <div className="text-wrapper">
-                    <MainHeading className={`dark-h2-introduction`} text={`Vera Witting`}/>
-                    <div className="headings-introduction">
-                    <SubHeading className={`dark-h3-introduction`} text={`Frontend Developer`}/>
-                    <SubHeading className={`dark-h3-introduction`} text={`Graphic Designer`}/>
-                    </div>
-                    <BodyText text={BodyContent} />
+                    <ProfileImg />
+                <div className="intro-text-wrapper">
+                    <MainHeading className={`intro portrait-name`} text={`Vera Witting`}/>
+                    <SubHeading className={`intro intro-subheading`} text={`Software Developer`}/>
+                    <BodyBold className={`intro intro-bold`} text={`Java | Spring Boot | React`}/>    
+                    <BodyText className={`intro`} text={BodyContent} />
                 </div>
             </div>
             <div className="arrow">
-                <img className="arrow" src={arrow} alt="Arrow jumping, pointing down to the rest of the page" />
+                <FaArrowDown />
             </div>
         </section>
     )

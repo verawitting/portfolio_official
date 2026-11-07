@@ -5,7 +5,7 @@ export const Footer = () => {
     return(
         <div className="footer">
             <p className="moving-text">
-                Vera Witting  ·  Frontend Developer  ·  Graphic Designer
+                Vera Witting  ·  Software Developer  ·  Graphic Designer
             </p>
         </div>
     )

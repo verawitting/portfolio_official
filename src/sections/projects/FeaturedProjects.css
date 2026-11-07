@@ -1,7 +1,13 @@
 .featuredprojects-section {
     display: flex;
     flex-direction: column;
-    padding: 128px 16px;
+    padding: 6rem 0 2rem;
+}
+
+.featuredprojects-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
   
 .headings-featured-projects {
@@ -10,76 +16,75 @@
 }
   
 .projects-list {
-    padding: 64px 0;
+    max-width: 20rem;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
 }
   
 .projects-list-item {
     list-style-type: none;
-    padding: 16px 0;
 }
   
 .project-img {
-    border-bottom: solid 10px var(--plum) ;
-    border-left: solid 10px var(--plum) ;
-    height: 200px;
+    border-bottom: solid 10px var(--pinkDark) ;
+    border-left: solid 10px var(--pinkDark) ;
+    height: 11rem;
     width: 100%;
     object-fit: cover; 
-    margin-bottom: 24px;
+    margin-bottom: 0.5rem;
+    border-radius: 0.2rem;
 }
   
-.tag {
-    margin-bottom: 24px;
+.tag-list {
+    margin: 1rem 0;
     max-width: 100%;
 }
   
-.tag ul li {
+.tag {
     list-style-type: none;
-    display: inline;
-    margin-right: 4px;
-    padding: 2px 6px;
-    color: var(--white);
-    background-color: black;
+    display: inline-block;
+    margin-right: 0.3rem;
+    margin-bottom: 0.3rem;
+    padding: 0 0.5rem;
+    color: var(--cream);
+    background-color: var(--blue);
     font-family: "Montserrat", sans-serif;
-    font-size: 16px;
     font-weight: 600;
+    border-radius: 0.2rem;
+    line-height: 1.7rem;
+    white-space: nowrap;
 } 
 
 @media (min-width: 744px) {
-    .featuredprojects-section {
-        display: flex;
-        align-items: center;
-    }
-
-    .featuredprojects-wrapper {
-        max-width: 660px;
-    }
 
     .headings-featured-projects{
         display: block;
         text-align: left;
     }
 
-    .projects-list-item{
-        display: flex;
-        gap: 37px;
-    }
-
-    .projects-list-item-info {
-        width: 430px;
+    .projects-list-item {
+        min-width: 430px;
     }
 
     .project-img {
-        height: 280px;
-        width: 200px;
+        height: 15rem;
     }
 }
 
 @media (min-width: 1279px) {
-    .featuredprojects-wrapper {
-        max-width: 850px;
-    }
+  .projects-list {
+    margin: 0 4rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: none;
+    gap: 4rem 2rem;
+  }
 
-    .project-img{
-        width: 280px;
-    }
+  .projects-list-item {
+    flex: 0 1 430px;
+    min-width: 430px;
+  }
 }

@@ -1,6 +1,6 @@
 export const MainHeading = ({ text, className }) => {
     const formattedText = text.toUpperCase()
     return (
-        <h2 className={`${className}`}>{formattedText}</h2>
+        <h1 className={className}>{formattedText}</h1>
     )
 }

@@ -1,56 +1,109 @@
+
 .button {
     display: inline-block;
-  }
-  
-  .button a {
-    display: inline-block;
-    background-color: white;
-    color: #333;
+}
+
+.button a {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+
+    background-color: var(--pinkDark);
+    color: var(--black);
+
     font-family: "dunbar-tall", sans-serif;
-    font-weight: 600;
+    font-weight: 800;
     font-size: 1rem;
+
     padding-right: 11px;
     text-decoration: none;
     border-radius: 25px;
-    width: 100%; 
-  }
-  
-  .button img {
-    height: 2rem;
-    width: 2rem; 
-  }
 
-  .demo-button:hover img {
-    content: url("/src/assets/button-icons/live-demo-light.svg");
-  }
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
 
-  .code-button:hover img {
-    content: url("/src/assets/button-icons/github-light.svg");
-  }
-  
-  .button-content-wrapper {
+}
+
+.button-content-wrapper {
     display: flex;
     align-items: center;
-  
-  }
+    gap: 0.35rem;
+    font-weight: 800;
+}
 
-  .btn-wrapper-projects {
+.button-icon {
+    width: 2rem;
+    height: 2rem;
+    flex-shrink: 0;
+    color: inherit;
+
+    transition: transform 0.25s ease;
+}
+
+/* Hover */
+.button a:hover {
+    background-color: var(--black);
+    color: var(--pinkDark);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(34, 34, 69, 0.2);
+}
+
+/* Small icon movement */
+.button a:hover .button-icon {
+    transform: scale(1.12);
+}
+
+/* Keyboard focus */
+.button a:focus-visible {
+    outline: 3px solid var(--pinkDark);
+    outline-offset: 4px;
+    background-color: var(--black);
+    color: var(--pinkDark);
+}
+
+.button a:focus-visible .button-icon {
+    transform: scale(1.12);
+}
+
+/* Pressed state */
+.button a:active {
+    transform: translateY(0) scale(0.97);
+    box-shadow: none;
+}
+
+.btn-wrapper-projects {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-  }
+}
 
-  .button a:hover {
-    background-color: var(--blue);
-    color: var(--white);
-    fill: var(--white)
-  }
-
-  @media (min-width:450px) {
+@media (min-width: 450px) {
     .btn-wrapper-projects {
-      flex-direction: row;
+        flex-direction: row;
     }
+
     .button {
-      width: 100%;
+        width: 100%;
     }
-  }
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    .button a,
+    .button-icon {
+        transition: none;
+    }
+
+    .button a:hover,
+    .button a:active {
+        transform: none;
+    }
+
+    .button a:hover .button-icon,
+    .button a:focus-visible .button-icon {
+        transform: none;
+    }
+}

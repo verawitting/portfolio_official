@@ -3,7 +3,7 @@ export const Tags = ({ tags }) => {
     console.log("tags", tags)
 
     return(
-        <div className="tag">
+        <div className="tag-list">
             <ul>
                 {tags.map((tag) => {
                     return (

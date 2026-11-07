@@ -1,5 +1,6 @@
 
-import { MainHeading } from "../components/Typo/MainHeading.jsx"
+import { SectionHeading } from "../components/Typo/SectionHeading.jsx"
+import { SubHeading } from "../components/Typo/SubHeading.jsx"
 import { BodyBold } from "../components/Typo/BodyBold.jsx"
 
 import "./Tech.css"
@@ -17,15 +18,20 @@ export const Tech = () => {
         <section className="tech-section">
             <div className="tech-wrapper">
                 <div className="headings-tech">
-                    <MainHeading className={`light-h2`} text={`Tech`}/>
+                    <SectionHeading text={`Tech`}/>
                 </div>
                 <div className="tech-skills">
-                    <BodyBold className={`tech-p`} text={TechTextOne} />
-                    <BodyBold className={`tech-p`} text={TechTextTwo} />
-                    <BodyBold className={`tech-p`} text={TechTextThree} />
-                    <BodyBold className={`tech-p`} text={TechTextFour} />
-                    <BodyBold className={`tech-p`} text={TechTextFive} /> 
-                </div>               
+                    <BodyBold  className={`tech-p`} text={`BACKEND`} />
+                    <BodyBold className={`tech-p`} text={`Java • Spring Boot • REST APIs`} />
+                </div>
+                <div className="tech-skills">
+                    <BodyBold className={`tech-p`} text={`FRONTEND`} />
+                    <BodyBold className={`tech-p`} text={`React • JavaScript • TypeScript • HTML & CSS`} />
+                </div>
+                <div className="tech-skills">
+                    <BodyBold className={`tech-p`} text={`DATA`} />
+                    <BodyBold className={`tech-p`} text={`SQL • H2 • MongoDB`} />
+                </div>      
             </div>
         </section>
     );

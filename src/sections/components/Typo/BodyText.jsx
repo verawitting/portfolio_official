@@ -1,6 +1,6 @@
-export const BodyText = ({ text }) => {
+export const BodyText = ({ className,text }) => {
     
     return (
-        <p className="bodytext">{text}</p>
+        <p className={`bodytext ${className}`}>{text}</p>
     )
 }

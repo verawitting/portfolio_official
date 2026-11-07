@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 
-import { MainHeading } from "../components/Typo/MainHeading.jsx"
-import { ProjectCard } from "./ProjectCard.jsx"
+import { SectionHeading } from "../components/Typo/SectionHeading.jsx"
+import { ProjectCards } from "./ProjectCard.jsx"
 
 import "./FeaturedProjects.css"
 
@@ -9,7 +9,7 @@ export const FeaturedProjects = () => {
 
     const [repos, setRepos] = useState([])
 
-    const REPOSAPI = "https://api.github.com/users/verawitting/repos"
+    const REPOSAPI = "https://api.github.com/users/verawitting/repos?per_page=100&sort=updated"
 
     useEffect(() => {
         const fetchRepos = async () => {
@@ -35,9 +35,9 @@ export const FeaturedProjects = () => {
         <section className="featuredprojects-section" id="projects">
             <div className="featuredprojects-wrapper">
                 <div className="headings-featured-projects">
-                    <MainHeading className={`dark-h2`} text={`Featured Projects`}/>
+                    <SectionHeading className={`dark-h2`} text={`Featured Projects`}/>
                 </div>
-                <ProjectCard repos={repos}/>
+                <ProjectCards repos={repos}/>
             </div>
         </section>
     )

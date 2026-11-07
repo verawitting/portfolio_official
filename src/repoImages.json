@@ -34,5 +34,20 @@
         "repoName": "final-project-plants-by",
         "prettyName": "Plants by Holm & Witting",
         "imageUrl": "/plants-by-mockup.png"
+    },
+    {
+        "repoName": "reseassistent",
+        "prettyName": "Travel Assistant",
+        "imageUrl": "/backend-project-img.png"
+    },
+    {
+        "repoName": "scam-analyser-api",
+        "prettyName": "Scam Analyser API",
+        "imageUrl": "/backend-project-img.png"
+    },
+    {
+        "repoName": "libraryAPI",
+        "prettyName": "Library API",
+        "imageUrl": "/backend-project-img.png"
     }
 ]
